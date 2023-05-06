@@ -1,0 +1,39 @@
+:root {
+  --nav-color: #ce0505;
+  --light-color: #ffffff;
+  --nav-font-color: #eb2929;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navBar {
+  background-color: var(--nav-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+}
+.navBar span {
+  font-size: 3rem;
+  color: var(--nav-font-color);
+  background-color: var(--light-color);
+  border-radius: 50%;
+  padding: 0.3rem 0.7rem;
+  margin-left: 4rem;
+}
+.navBar button {
+  background: transparent;
+  margin: 0 1rem;
+  color: var(--light-color);
+  font-size: 1.4rem;
+  border: none;
+}
+.navBar button:nth-child(2) {
+  margin-right: 4rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 2px solid var(--light-color);
+  cursor: pointer;
+}
