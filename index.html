@@ -19,7 +19,36 @@
   <body>
     <div class="wrapper">
     <h1>Breakfast Places in Mumbai</h1>
-    <aside></aside>
+    <aside>
+      <span><b>Filters</b></span>
+      <h3>Select Location</h3>
+      <select name="location" id="location">
+        <option value="location">
+          -- Select --
+        </option>
+      </select>
+      <h3>Cuisine</h3>
+      <label for="northIndia">
+      <input type="checkbox" name="northIndian" id="northIndian">North Indian</label>
+      <label for="southIndia">
+      <input type="checkbox" name="southIndian" id="southIndia">South Indian</label>
+      <label for="chinese">
+      <input type="checkbox" name="chinese" id="chinese">Chinese</label>
+      <label for="fastFoo">
+      <input type="checkbox" name="fastFoo" id="fastFoo">Fast Food</label>
+      <label for="streetFood">
+      <input type="checkbox" name="streetFood" id="streetFood">Street Food</label>
+      <h3>Cost For Two</h3>
+      <label for="less500"><input type="radio" name="checkPrice" id="less500">Less than 500</label>
+      <label for="less500"><input type="radio" name="checkPrice" id="less500">500 to 1000</label>
+      <label for="less500"><input type="radio" name="checkPrice" id="less500">1000 to 1500</label>
+      <label for="less500"><input type="radio" name="checkPrice" id="1500To2000">1500 to 2000</label>
+      <label for="2000Above"><input type="radio" name="checkPrice" id="2000+">2000+</label>
+
+      <h3>Sort</h3>
+      <label for="lowToHigh"><input type="checkbox" name="lowToHigh" id="lowToHigh">Price low to high</label>
+      <label for="highToLow"><input type="checkbox" name="highToLow" id="highToLow">Price high to low</label>
+    </aside>
     <main></main>
   </body>
   </div>
