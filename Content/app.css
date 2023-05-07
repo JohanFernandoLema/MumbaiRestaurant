@@ -1,11 +1,17 @@
+/* Import poppins from google fonts api's */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 /* ========= GLOBAL VARIABLES ========= */
 :root {
   --nav-color: #ce0505;
   --light-color: #ffffff;
   --nav-font-color: #eb2929;
+  --light-font-color:#8C96AB;
   --color: #192f60;
   --bg-color: #fbfbfb;
   --box-shadow: 0px 3px 6px #00000029;
+  --font-family:poppins, 'snas-serif';
+  --border-color:#3A5075;
 }
 * {
   margin: 0;
@@ -15,6 +21,7 @@
 body {
   color: var(--color);
   background: var(--bg-color);
+  font-family: var(--font-family);
 }
 
 /* ============= NAVBAR SETTINGS ============= */
@@ -26,7 +33,7 @@ body {
   align-items: center;
 }
 .navBar span {
-  font-size: 3rem;
+  font-size: 1.7rem;
   color: var(--nav-font-color);
   background-color: var(--light-color);
   border-radius: 50%;
@@ -52,15 +59,40 @@ body {
 .wrapper {
   width: 80%;
   margin: auto;
+  display: grid;
+  grid-template-columns: 30% 40%;
 }
-.wrapper h1 {
+h1 {
   font-weight: 900;
   font-size: 3rem;
   margin: 2rem 0;
+  width: 80%;
+  margin: auto;
 }
 /* ========= ASIDE SETUP ========= */
 aside {
   background-color: var(--light-color);
   box-shadow: var(--box-shadow);
+  padding: 1rem;
 }
+aside h3{
+  margin: 1rem 0;
+}
+aside .menuLocation input,
+aside .menuPrice input,
+aside .sortMenu input
+{
+  margin-right: 10px;
+  border:var(--border-color);
+}
+aside .menuLocation label,
+aside .menuPrice label,
+aside .sortMenu label {
+  display: block;
+  margin: .7rem;
+  font-size: 1rem;
+  color: var(--light-font-color);
+}
+
+
 /* ========= MAIN SETUP ========= */
