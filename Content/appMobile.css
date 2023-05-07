@@ -1,0 +1,58 @@
+@media screen and (max-width:1420px) {
+    main .item-info .item-desc h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1220px) {
+    main .item-info .item-desc h2 {
+        font-size: 20px;
+    }
+    main .item-info p {
+        font-size: 15px;
+    }
+    main .item-info h3 {
+        font-size: 15px;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width:1020px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .wrapper button {
+        display: block;
+        width: 80.1%;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    main .item-info .item-desc h2 {
+        font-size: 20px;
+    }
+        
+    main .item-info p {
+        font-size: 15px;
+    }
+        
+    main .item-info h3 {
+        font-size: 15px;
+    }
+        
+    h1 {
+        font-size: 1.4rem;
+        margin: 2rem auto;
+    }
+    aside{
+        top: 35px;
+        height: 0;
+        overflow: hidden;
+        transition: all 300ms ease-in;
+    }
+
+    .active{
+        height: 110vh;
+    }
+
+}
