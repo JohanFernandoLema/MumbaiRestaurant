@@ -29,3 +29,19 @@ window.addEventListener('DOMContentLoaded', ()=>{
     itemsInformation.innerHTML = displayMenu;
     console.log(displayMenu);
 });
+
+
+// Collapsible button
+const navToggle =  document.querySelector('.filterSlideIn');
+const asideSlide = document.querySelector('aside');
+
+navToggle.addEventListener("click", function(){
+  // if(asideSlide.classList.contains("active")){
+  //   asideSlide.classList.remove("active");
+  // }
+  // else{
+  //   asideSlide.classList.add("active");
+  // }
+  //Shorhand for code above
+  asideSlide.classList.toggle('active');
+})
