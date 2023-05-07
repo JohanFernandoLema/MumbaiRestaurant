@@ -1,13 +1,22 @@
+/* ========= GLOBAL VARIABLES ========= */
 :root {
   --nav-color: #ce0505;
   --light-color: #ffffff;
   --nav-font-color: #eb2929;
+  --color: #192f60;
+  --bg-color: #fbfbfb;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  color: var(--color);
+  background: var(--bg-color);
+}
+
+/* ============= NAVBAR SETTINGS ============= */
 .navBar {
   background-color: var(--nav-color);
   display: flex;
@@ -37,3 +46,19 @@
   border: 2px solid var(--light-color);
   cursor: pointer;
 }
+
+/* ========= MAIN HEADING ========= */
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+.wrapper h1 {
+  width: 80%;
+  margin: auto;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+/* ========= ASIDE SETUP ========= */
+
+/* ========= MAIN SETUP ========= */
