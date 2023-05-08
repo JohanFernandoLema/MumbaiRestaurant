@@ -6,19 +6,19 @@
   --nav-color: #ce0505;
   --card-color: #ffffff;
   --nav-font-color: #eb2929;
-  --light-font-color:#8C96AB;
+  --light-font-color: #8c96ab;
   --color: #192f60;
   --bg-color: #fbfbfb;
   --box-shadow: 0px 3px 6px #00000029;
-  --font-family:poppins, 'snas-serif';
-  --border-color:#3A5075;
+  --font-family: poppins, 'snas-serif';
+  --border-color: #3a5075;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   color: var(--color);
   background: var(--bg-color);
   font-family: var(--font-family);
@@ -65,7 +65,7 @@ body{
   gap: 2rem;
   grid-template-columns: 30% 70%;
 }
-.wrapper select{
+.wrapper select {
   width: 50%;
   height: 5%;
 }
@@ -74,10 +74,10 @@ h1 {
   font-size: 2.3rem;
   margin: 2rem 0;
   width: 80%;
-  margin:1rem auto;
+  margin: 1rem auto;
 }
 /* ========= ASIDE SETUP ========= */
-.wrapper button{
+.wrapper button {
   position: absolute;
   width: 24.1%;
   height: 2.5rem;
@@ -91,47 +91,52 @@ aside {
   z-index: 0000;
   margin-bottom: 1.5rem;
 }
-aside h3{
+aside h3 {
   margin: 1rem 0;
 }
 aside .menuLocation input,
 aside .menuPrice input,
-aside .sortMenu input
-{
+aside .sortMenu input {
   margin-right: 10px;
-  border:var(--border-color);
+  border: var(--border-color);
 }
 aside .menuLocation label,
 aside .menuPrice label,
 aside .sortMenu label {
   display: block;
-  margin: .7rem;
+  margin: 0.7rem;
   font-size: 1rem;
   color: var(--light-font-color);
 }
 
 /* ========= MAIN SETUP ========= */
-main .item-info{
+main .item-info {
   display: grid;
-  grid-template-columns: 30%70%;
-  background: var(--card-color);
+  grid-template-columns: 1fr;
+}
+.cards {
+  background: var(--bg-color);
   box-shadow: var(--box-shadow);
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
   padding: 2rem;
 }
-main .item-info .picture{
-  text-align: left;
-}
-main .item-info .picture img{
+main .item-info .cards .picture {
   width: 90%;
+  height: 100%;
+}
+main .item-info .cards .picture img {
+  width: 100%;
   height: 90%;
 }
-main .item-info .item-desc h2{
+main .item-info .cards .item-desc h2 {
   font-size: 40px;
 }
-main .item-info .item-desc p {
+main .item-info .cards .item-desc p {
   color: var(--light-font-color);
 }
-main .item-info h3 {
+main .item-info .cards h3 {
   font-weight: 300;
-  color: var(--light-font-color );
+  color: var(--light-font-color);
 }

@@ -20,7 +20,9 @@ const itemsInformation = document.querySelector('.item-info')
 
 window.addEventListener('DOMContentLoaded', () => {
   let displayMenu = meals.map((items) => {
-    return `<div class="picture">
+    return `
+        <div class="cards">
+        <div class="picture">
         <img src=${items.img}>
         </div>
         <div class="item-desc">
@@ -31,7 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
         <h3>CUISINE:</h3>
         <span>${items.cusine}</span>
         <h3>COST FOR TWO:</h3>
-        <span>₹${items.cost}</span>`
+        <span>₹${items.cost}</span>
+        </div>`
   })
   displayMenu = displayMenu.join('')
   itemsInformation.innerHTML = displayMenu
