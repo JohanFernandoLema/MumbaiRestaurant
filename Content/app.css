@@ -81,7 +81,7 @@ h1 {
   opacity: 0;
 }
 /* ========= ASIDE SETUP ========= */
-.wrapper button {
+.wrapper .filterSlideIn {
   position: absolute;
   width: 24.1%;
   height: 2.5rem;
@@ -148,6 +148,27 @@ main .item-info .cards .item-desc p {
 main .item-info .cards h3 {
   font-weight: 300;
   color: var(--light-font-color);
+}
+/* Page navigation */
+.page-navigation {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.page-navigation button {
+  height: 2rem;
+  width: 3%;
+  color: var(--light-font-color);
+  background: var(--bg-color);
+  border: 1px solid var(--light-font-color);
+  margin: 0 0.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.page-navigation button:nth-child(2) {
+  color: var(--bg-color);
+  background: var(--light-font-color);
 }
 @keyframes slideIn {
   0% {
