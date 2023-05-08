@@ -1,58 +1,71 @@
-@media screen and (max-width:1420px) {
-    main .item-info .item-desc h2 {
-        font-size: 30px;
-    }
+@media screen and (max-width: 1420px) {
+  main .item-info .cards .item-desc h2 {
+    font-size: 30px;
+  }
 }
-@media screen and (max-width:1220px) {
-    main .item-info .item-desc h2 {
-        font-size: 20px;
-    }
-    main .item-info p {
-        font-size: 15px;
-    }
-    main .item-info h3 {
-        font-size: 15px;
-    }
-    h1{
-        font-size: 2rem;
-        margin: 2rem auto;
-    }
+@media screen and (max-width: 1220px) {
+  main .item-info .cards .item-desc h2 {
+    font-size: 20px;
+  }
+  main .item-info p {
+    font-size: 15px;
+  }
+  main .item-info h3 {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
 }
-@media screen and (max-width:1020px) {
-    .wrapper{
-        grid-template-columns: 1fr;
-    }
-    .wrapper button {
-        display: block;
-        width: 80.1%;
-        z-index: 9999;
-        cursor: pointer;
-    }
-    main .item-info .item-desc h2 {
-        font-size: 20px;
-    }
-        
-    main .item-info p {
-        font-size: 15px;
-    }
-        
-    main .item-info h3 {
-        font-size: 15px;
-    }  
-    h1 {
-        font-size: 1.4rem;
-        margin: 2rem auto;
-    }
-    aside{
-        height: 0;
-        overflow: hidden;
-        transition: all 300ms ease-in;
-    }
-    .active{
-        height: 110vh;
-    }
-    header .navBar span{
-        display: none;
-    }
+@media screen and (max-width: 1020px) {
+  header .navBar span {
+    display: none;
+  }
+  .navBar div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .navBar button:nth-child(2) {
+    margin-right: 1rem;
+  }
+  .wrapper button {
+    display: block;
+    width: 80.1%;
+    z-index: 9999;
+    cursor: pointer;
+    border: 3px solid #192f60;
+    font-size: 1.1rem;
+    box-shadow: 0px 3px 6px #00000029;
+  }
+  main .item-info .item-desc h2 {
+    font-size: 20px;
+  }
 
+  main .item-info p {
+    font-size: 15px;
+  }
+
+  main .item-info h3 {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 1.4rem;
+    margin: 2rem auto;
+  }
+  aside {
+    height: 0;
+    overflow: hidden;
+    transition: all 300ms ease-in;
+  }
+  .active {
+    height: 46rem;
+  }
+  h1 {
+    margin: 0.5rem auto;
+  }
 }
