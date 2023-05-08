@@ -2,6 +2,10 @@
   main .item-info .cards .item-desc h2 {
     font-size: 30px;
   }
+  .page-navigation button {
+    height: 2rem;
+    width: 5%;
+  }
 }
 @media screen and (max-width: 1220px) {
   main .item-info .cards .item-desc h2 {
@@ -67,5 +71,9 @@
   }
   h1 {
     margin: 0.5rem auto;
+  }
+  .page-navigation button {
+    height: 2em;
+    width: 8%;
   }
 }
